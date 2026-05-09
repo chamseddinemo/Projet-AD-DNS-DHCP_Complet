@@ -105,26 +105,14 @@
 
 ## 📸 Captures d'écran
 
-### Vue d'ensemble de l'architecture
-![Architecture](screenshots/01-architecture/architecture-overview.png)
+### Configuration des stratégies de groupe
+![GPO Configuration](Screenshoot/GPO/Capture d'écran (418).png)
 
-### Structure Active Directory
-![AD Structure](screenshots/02-active-directory/ad-structure.png)
+### Gestion des groupes Active Directory
+![Groups Management](Screenshoot/GROUPES/Capture d'écran (407).png)
 
-### Gestion des stratégies de groupe
-![GPO Management](screenshots/03-group-policy/gpo-management.png)
-
-### Configuration des services réseau
-![Network Services](screenshots/04-network-services/network-services.png)
-
-### Configuration du serveur de fichiers
-![File Server](screenshots/05-file-server/file-server.png)
-
-### Configuration client
-![Client Config](screenshots/06-client-configuration/client-config.png)
-
-### Stratégies de sécurité
-![Security Policies](screenshots/07-security/security-policies.png)
+### Politique de mot de passe
+![Password Policy](Screenshoot/MOT DE PASSE/Capture d'écran (417).png)
 
 ## 🎓 Compétences démontrées
 
