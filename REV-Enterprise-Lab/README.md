@@ -106,13 +106,13 @@
 ## 📸 Captures d'écran
 
 ### Configuration des stratégies de groupe
-![GPO Configuration](Screenshoot/GPO/Capture d'écran (418).png)
+![GPO Configuration](Capture d'écran/GPO/Capture d'écran (418).png)
 
 ### Gestion des groupes Active Directory
-![Groups Management](Screenshoot/GROUPES/Capture d'écran (407).png)
+![Groups Management](Capture d'écran/GROUPES/Capture d'écran (407).png)
 
 ### Politique de mot de passe
-![Password Policy](Screenshoot/MOT DE PASSE/Capture d'écran (417).png)
+![Password Policy](Capture d'écran/MOT DE PASSE/Capture d'écran (417).png)
 
 ## 🎓 Compétences démontrées
 
@@ -162,8 +162,8 @@ REV-Enterprise-Lab/
 ├── 07-Security/             # Stratégies de sécurité
 ├── 08-Applications/         # Déploiement d'applications
 ├── 09-Validation/           # Tests et dépannage
-├── docs/                    # Documentation du projet
-└── screenshots/             # Documentation visuelle
+├── documents/                # Documentation du projet
+└── Capture d'écran/          # Documentation visuelle
 ```
 
 ## 🤝 Contribuer
