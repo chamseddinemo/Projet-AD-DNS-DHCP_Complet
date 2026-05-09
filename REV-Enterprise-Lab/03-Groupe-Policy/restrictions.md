@@ -13,11 +13,10 @@ Ce document présente les restrictions utilisateur implémentées dans le domain
 
 
    
-### Configuration DHCP
-![DHCP Configuration](../Capture d'écran/DHCP/Capturedécran-(477).png)
+
  
 ### Configuration des quotas
-![Quota Configuration](../Capture d'écran/quota/Capture d’écran (477).png)
+![Quota Configuration](../Capture d'écran/quota/Capturedécran-(477).png)
 
 
 ## 🚫 Restrictions par département
