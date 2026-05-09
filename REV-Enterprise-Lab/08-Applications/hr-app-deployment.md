@@ -109,14 +109,6 @@ gpupdate /force
    - Confirmer la configuration DNS du client
    - Tester avec `nslookup`
 
-## 📊 Monitoring
-
-### Rapport de déploiement
-- **Utilisateurs ciblés** : Tous les membres de HK-Group
-- **Raccourcis créés** : [Nombre]
-- **Raccourcis manquants** : [Nombre]
-- **Taux de réussite** : [Pourcentage]%
-
 ## 📸 Captures d'écran
 
 ### Configuration du GPO de raccourci
@@ -129,7 +121,3 @@ gpupdate /force
 ![Shortcut Validation](../screenshots/08-applications/shortcut-validation.png)
 
 ---
-
-**Document** : Déploiement de l'application HR  
-**Version** : 1.0  
-**Dernière mise à jour** : Mai 2026
