@@ -18,15 +18,15 @@ Ce document présente le plan d'adressage IP complet pour l'infrastructure REV-E
 
 ## 📊 Allocation des adresses IP
 
-### Infrastructure critique (192.168.1.10-19)
+### Infrastructure critique (192.108.1.10-19)
 | IP | Nom d'hôte | Rôle | Statut |
 |----|------------|------|--------|
-| 192.168.1.10 | PDC.rev.local | Contrôleur de domaine principal | ✅ Actif |
-| 192.168.1.11 | BDC.rev.local | Contrôleur de domaine secondaire | 🔄 Planifié |
-| 192.168.1.12 | APP.rev.local | Serveur d'applications | 🔄 Planifié |
-| 192.168.1.13 | WEB.rev.local | Serveur web | 🔄 Planifié |
-| 192.168.1.14 | DB.rev.local | Base de données | 🔄 Planifié |
-| 192.168.1.15 | FILE.rev.local | Serveur de fichiers | ✅ Actif |
+| 192.108.1.10 | PDC.rev.local | Contrôleur de domaine principal | ✅ Actif |
+| 192.108.1.11 | BDC.rev.local | Contrôleur de domaine secondaire | 🔄 Planifié |
+| 192.108.1.12 | APP.rev.local | Serveur d'applications | 🔄 Planifié |
+| 192.108.1.13 | WEB.rev.local | Serveur web | 🔄 Planifié |
+| 192.108.1.14 | DB.rev.local | Base de données | 🔄 Planifié |
+| 192.108.1.15 | FILE.rev.local | Serveur de fichiers | ✅ Actif |
 | 192.168.1.16 | BACKUP.rev.local | Sauvegarde | 🔄 Planifié |
 | 192.168.1.17 | MONITOR.rev.local | Surveillance | 🔄 Planifié |
 | 192.168.1.18 | PRINT.rev.local | Serveur d'impression | 🔄 Planifié |

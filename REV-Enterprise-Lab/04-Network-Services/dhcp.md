@@ -39,7 +39,7 @@ Ce document présente la configuration du serveur DHCP dans le domaine REV.LOCAL
 ### Plages d'exclusion
 | Début | Fin | Raison |
 |-------|-----|--------|
-| 192.168.1.80 | 192.168.1.85 | Réservé pour usage futur |
+| 192.168.1.80 | 192.168.1.85 | Exclure selon spécifications |
 | 192.168.1.190 | 192.168.1.199 | Réservé pour serveurs spécialisés |
 
 ### Réservations configurées

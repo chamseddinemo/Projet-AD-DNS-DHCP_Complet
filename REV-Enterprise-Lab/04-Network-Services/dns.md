@@ -48,12 +48,12 @@ Ce document présente la configuration du serveur DNS dans le domaine REV.LOCAL 
 ### Enregistrements A principaux
 | Nom | Type | Adresse IP | Description |
 |-----|------|------------|-------------|
-| pdc | A | 192.168.1.10 | Contrôleur de domaine principal |
-| file | A | 192.168.1.15 | Serveur de fichiers |
+| pdc | A | 192.108.1.10 | Contrôleur de domaine principal |
+| file | A | 192.108.1.15 | Serveur de fichiers |
 | www | A | 192.168.1.8 | Serveur web principal |
 | www | A | 192.168.1.9 | Serveur web secondaire |
-| mail | A | 192.168.1.10 | Serveur de messagerie |
-| vpn | A | 192.168.1.10 | Serveur VPN |
+| mail | A | 192.108.1.10 | Serveur de messagerie |
+| vpn | A | 192.108.1.10 | Serveur VPN |
 
 ### Enregistrements CNAME
 | Nom | Type | Cible | Description |

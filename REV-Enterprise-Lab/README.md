@@ -30,14 +30,14 @@
 ### Configuration réseau
 - **Nom de domaine** : `rev.local`
 - **Contrôleur de domaine principal** : `PDC.rev.local`
-- **Adresse IP du serveur** : `192.168.1.10`
+- **Adresse IP du serveur** : `192.108.1.10`
 - **Poste client** : `HRPC01.rev.local`
 - **IP client réservée** : `192.168.1.200`
 
 ### Plan d'adressage IP
 | Composant | Adresse IP | Masque | Passerelle |
 |-----------|-------------|--------|------------|
-| Serveur PDC | 192.168.1.10 | 255.255.255.0 | 192.168.1.1 |
+| Serveur PDC | 192.108.1.10 | 255.255.255.0 | 192.108.1.1 |
 | Client HRPC01 | 192.168.1.200 | 255.255.255.0 | 192.168.1.1 |
 | Plage DHCP | 192.168.1.40-230 | 255.255.255.0 | 192.168.1.1 |
 
