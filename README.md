@@ -1,151 +1,211 @@
-REV-Enterprise-Lab
-🏢 Description du projet
-REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pour simuler les opérations IT d'une entreprise réelle. Ce projet démontre l'implémentation et la gestion des services Windows Server essentiels.
+<h1>🏢 REV-Enterprise-Lab</h1>
 
-🎯 Objectifs
-Simuler un environnement Windows Server d'entreprise
-Déployer Active Directory avec structure organisationnelle
-Implémenter des stratégies de groupe pour la sécurité
-Configurer les services réseau (DHCP, DNS)
-Établir une infrastructure de serveur de fichiers sécurisée
-Documenter tous les processus pour le support technique
-🛠️ Technologies utilisées
-Technologie	Version	Usage
-Windows Server	2019/2022	Serveur principal
-Windows 10	Entreprise	Poste client
-Active Directory	Services de domaine	Gestion des identités
-Stratégies de groupe	Console de gestion	Application des politiques
-DHCP	Rôle	Gestion des adresses IP
-DNS	Rôle	Résolution de noms
-Serveur de fichiers	Rôle	Stockage centralisé
-🏗️ Détails de l'environnement
-Configuration réseau
-Nom de domaine : rev.local
-Contrôleur de domaine principal : PDC.rev.local
-Adresse IP du serveur : 192.108.1.10
-Poste client : HRPC01.rev.local
-IP client réservée : 192.168.1.200
-Plan d'adressage IP
-Composant	Adresse IP	Masque	Passerelle
-Serveur PDC	192.108.1.10	255.255.255.0	192.108.1.1
-Client HRPC01	192.168.1.200	255.255.255.0	192.168.1.1
-Plage DHCP	192.168.1.40-230	255.255.255.0	192.168.1.1
-📋 Vue d'ensemble de l'architecture
-┌─────────────────────────────────────────────────────────────┐
-│                    REV.ENTERPRISE.LAB                       │
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
-│  │   PDC       │  │  File Server│  │   Client    │         │
-│  │192.168.1.10 │  │192.168.1.15 │  │192.168.1.200│         │
-│  └─────────────┘  └─────────────┘  └─────────────┘         │
-├─────────────────────────────────────────────────────────────┤
-│                    Services principaux                      │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐            │
-│  │Active Dir   │ │   DHCP      │ │    DNS      │            │
-│  │Domain Svc   │ │   Server    │ │   Server    │            │
-│  └─────────────┘ └─────────────┘ └─────────────┘            │
-├─────────────────────────────────────────────────────────────┤
-│               Unités d'organisation                         │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐            │
-│  │   HR    │ │    HK   │ │  Sales  │ │    IT   │            │
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘            │
-└─────────────────────────────────────────────────────────────┘
-✨ Fonctionnalités implémentées
-🔐 Gestion des identités et accès
-Services de domaine Active Directory
-Structure des unités d'organisation par département
-Gestion des utilisateurs et groupes avec conventions de nommage
-Gestion des comptes ordinateurs pour les appareils du domaine
-📋 Gestion des stratégies
-Objets de stratégie de groupe pour la sécurité
-Restrictions utilisateur (Invite de commandes, Panneau de configuration)
-Contrôles d'accès au stockage amovible
-Stratégies de restriction logicielle
-Stratégies de mot de passe et verrouillage de compte
-🌐 Services réseau
-Serveur DHCP avec configuration d'étendue et réservations
-Serveur DNS avec enregistrements A et équilibrage de charge round-robin
-Conception de topologie réseau et planification IP
-💾 Services de fichiers
-Création de dossiers partagés avec autorisations NTFS
-Mappage de lecteurs via stratégie de groupe
-Gestion des quotas de disque
-Contrôles d'accès spécifiques par département
-🔒 Sécurité renforcée
-Exigences de complexité des mots de passe
-Stratégies de verrouillage de compte
-Restrictions de sécurité des points de terminaison
-Contrôles des médias amovibles
-🖥️ Gestion des clients
-Procédures de jointure de domaine Windows 10
-Délégation d'administrateur local
-Validation des stratégies de groupe
-Déploiement d'applications via GPO
-📸 Captures d'écran
-Vue d'ensemble de l'architecture
-Architecture
+<h2>📌 Description du projet</h2>
+<p>
+REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pour simuler les opérations IT d'une entreprise réelle.
+Ce projet démontre l'implémentation et la gestion des services Windows Server essentiels.
+</p>
 
-Structure Active Directory
-AD Structure
+<hr>
 
-Gestion des stratégies de groupe
-GPO Management
+<h2>🎯 Objectifs</h2>
+<ul>
+<li>Simuler un environnement Windows Server d'entreprise</li>
+<li>Déployer Active Directory avec structure organisationnelle</li>
+<li>Implémenter des stratégies de groupe pour la sécurité</li>
+<li>Configurer les services réseau (DHCP, DNS)</li>
+<li>Établir une infrastructure de serveur de fichiers sécurisée</li>
+<li>Documenter tous les processus pour le support technique</li>
+</ul>
 
-Configuration des services réseau
-Network Services
+<hr>
 
-Configuration du serveur de fichiers
-File Server
+<h2>🛠️ Technologies utilisées</h2>
+<table>
+<tr><th>Technologie</th><th>Version</th><th>Usage</th></tr>
+<tr><td>Windows Server</td><td>2019/2022</td><td>Serveur principal</td></tr>
+<tr><td>Windows 10</td><td>Entreprise</td><td>Poste client</td></tr>
+<tr><td>Active Directory</td><td>Services de domaine</td><td>Gestion des identités</td></tr>
+<tr><td>Stratégies de groupe</td><td>Console de gestion</td><td>Application des politiques</td></tr>
+<tr><td>DHCP</td><td>Rôle</td><td>Gestion des adresses IP</td></tr>
+<tr><td>DNS</td><td>Rôle</td><td>Résolution de noms</td></tr>
+<tr><td>Serveur de fichiers</td><td>Rôle</td><td>Stockage centralisé</td></tr>
+</table>
 
-Configuration client
-Client Config
+<hr>
 
-Stratégies de sécurité
-Security Policies
+<h2>🏗️ Détails de l'environnement</h2>
 
-🎓 Compétences démontrées
-Catégorie	Compétences
-Administration serveur	Déploiement Windows Server, Configuration des rôles
-Active Directory	Configuration contrôleur de domaine, Design OU
-Stratégies de groupe	Création GPO, Liaison de politiques
-Services réseau	Configuration DHCP/DNS, Planification IP
-Services de fichiers	Autorisations de partage, Droits NTFS
-Sécurité	Application des politiques, Contrôles d'accès
-Gestion client	Jointures domaine, Validation politiques
-Documentation	Rédaction technique, Procédures
-🚀 Améliorations futures
-Améliorations prévues
-Haute disponibilité : Implémenter des contrôleurs de domaine supplémentaires
-Services de certificats : Déployer AD CS pour la gestion des certificats
-Accès distant : Configurer des solutions VPN et DirectAccess
-Surveillance : Implémenter System Center Operations Manager
-Solutions de sauvegarde : Déployer des stratégies Windows Server Backup
-✅ Résumé de la validation
-Le projet inclut des procédures de validation complètes :
+<h3>Configuration réseau</h3>
+<ul>
+<li><b>Nom de domaine :</b> rev.local</li>
+<li><b>Contrôleur de domaine :</b> PDC.rev.local</li>
+<li><b>IP serveur :</b> 192.168.1.10</li>
+<li><b>Client :</b> HRPC01.rev.local</li>
+<li><b>IP réservée :</b> 192.168.1.200</li>
+</ul>
 
-Composant	Méthode de validation	Statut
-Active Directory	Connexion utilisateur, Appartenance groupe	✅ Validé
-Stratégies de groupe	gpupdate, Test politiques	✅ Validé
-DHCP	Attribution IP, Test réservation	✅ Validé
-DNS	Résolution de noms, Équilibrage charge	✅ Validé
-Serveur de fichiers	Test accès, Vérification permissions	✅ Validé
-Sécurité	Test politique mot de passe, Verrouillage	✅ Validé
-📚 Structure de la documentation
-REV-Enterprise-Lab/
-├── 01-Architecture/          # Conception réseau et planification
-├── 02-Active-Directory/      # Implémentation AD DS
-├── 03-Group-Policy/         # Configuration GPO
-├── 04-Network-Services/     # Configuration DHCP/DNS
-├── 05-File-Server/          # Implémentation services fichiers
-├── 06-Client-Configuration/ # Gestion postes de travail
-├── 07-Security/             # Stratégies de sécurité
-├── 08-Applications/         # Déploiement d'applications
-├── 09-Validation/           # Tests et dépannage
-├── docs/                    # Documentation du projet
-└── screenshots/             # Documentation visuelle
-🤝 Contribuer
-Ce projet sert de ressource d'apprentissage complète pour l'administration Windows Server. N'hésitez pas à l'utiliser comme référence pour vos propres projets d'infrastructure d'entreprise.
+<h3>Plan d’adressage IP</h3>
+<table>
+<tr><th>Composant</th><th>Adresse IP</th><th>Masque</th><th>Passerelle</th></tr>
+<tr><td>PDC</td><td>192.168.1.10</td><td>255.255.255.0</td><td>192.168.1.1</td></tr>
+<tr><td>Client HRPC01</td><td>192.168.1.200</td><td>255.255.255.0</td><td>192.168.1.1</td></tr>
+<tr><td>DHCP</td><td>192.168.1.40-230</td><td>255.255.255.0</td><td>192.168.1.1</td></tr>
+</table>
 
-Statut du projet : ✅ Complet
-Dernière mise à jour : Mai 2026
-Version : 1.0.0
+<hr>
+
+<h2>📋 Architecture</h2>
+
+<pre>
+REV ENTERPRISE LAB
+│
+├── PDC (192.168.1.10)
+├── File Server (192.168.1.15)
+└── Client (192.168.1.200)
+
+Services:
+- Active Directory
+- DHCP
+- DNS
+
+Departments:
+HR | HK | Sales | IT
+</pre>
+
+<hr>
+
+<h2>✨ Fonctionnalités</h2>
+
+<h3>🔐 Gestion des identités</h3>
+<ul>
+<li>Active Directory Domain Services</li>
+<li>OU par département</li>
+<li>Gestion utilisateurs et groupes</li>
+</ul>
+
+<h3>📋 GPO</h3>
+<ul>
+<li>Blocage CMD et Control Panel</li>
+<li>Restriction stockage externe</li>
+<li>Stratégies de mot de passe</li>
+</ul>
+
+<h3>🌐 Réseau</h3>
+<ul>
+<li>DHCP avec scope + réservation</li>
+<li>DNS avec load balancing</li>
+</ul>
+
+<h3>💾 File Server</h3>
+<ul>
+<li>Dossiers partagés</li>
+<li>Permissions NTFS</li>
+<li>Quotas disque</li>
+</ul>
+
+<h3>🔒 Sécurité</h3>
+<ul>
+<li>Complexité mot de passe</li>
+<li>Account lockout</li>
+<li>Restrictions utilisateurs</li>
+</ul>
+
+<h3>🖥️ Client</h3>
+<ul>
+<li>Join domain</li>
+<li>Admin local via groupe IT</li>
+<li>GPO appliquées</li>
+</ul>
+
+<hr>
+
+<h2>📸 Screenshots</h2>
+
+<p><b>Architecture</b></p>
+<img src="screenshots/architecture.png" width="600">
+
+<p><b>Active Directory</b></p>
+<img src="screenshots/ad.png" width="600">
+
+<p><b>GPO</b></p>
+<img src="screenshots/gpo.png" width="600">
+
+<p><b>Network</b></p>
+<img src="screenshots/network.png" width="600">
+
+<p><b>File Server</b></p>
+<img src="screenshots/fileserver.png" width="600">
+
+<p><b>Client</b></p>
+<img src="screenshots/client.png" width="600">
+
+<p><b>Security</b></p>
+<img src="screenshots/security.png" width="600">
+
+<hr>
+
+<h2>🎓 Compétences</h2>
+<table>
+<tr><th>Catégorie</th><th>Compétences</th></tr>
+<tr><td>Serveur</td><td>Windows Server, rôles</td></tr>
+<tr><td>AD</td><td>Domain Controller, OU</td></tr>
+<tr><td>GPO</td><td>Policies, restrictions</td></tr>
+<tr><td>Réseau</td><td>DHCP, DNS</td></tr>
+<tr><td>Sécurité</td><td>Policies, accès</td></tr>
+<tr><td>Client</td><td>Join domain</td></tr>
+</table>
+
+<hr>
+
+<h2>🚀 Améliorations futures</h2>
+<ul>
+<li>Ajouter un deuxième Domain Controller</li>
+<li>Implémenter AD CS</li>
+<li>Configurer VPN</li>
+<li>Ajouter monitoring</li>
+<li>Backup serveur</li>
+</ul>
+
+<hr>
+
+<h2>✅ Validation</h2>
+<table>
+<tr><th>Composant</th><th>Test</th><th>Status</th></tr>
+<tr><td>Active Directory</td><td>Login utilisateur</td><td>✅</td></tr>
+<tr><td>GPO</td><td>gpupdate</td><td>✅</td></tr>
+<tr><td>DHCP</td><td>IP assignée</td><td>✅</td></tr>
+<tr><td>DNS</td><td>Résolution</td><td>✅</td></tr>
+<tr><td>File Server</td><td>Accès</td><td>✅</td></tr>
+<tr><td>Sécurité</td><td>Lockout</td><td>✅</td></tr>
+</table>
+
+<hr>
+
+<h2>📚 Structure</h2>
+<pre>
+01-Architecture/
+02-Active-Directory/
+03-Group-Policy/
+04-Network-Services/
+05-File-Server/
+06-Client-Configuration/
+07-Security/
+08-Applications/
+09-Validation/
+docs/
+screenshots/
+</pre>
+
+<hr>
+
+<h2>🤝 Contribuer</h2>
+<p>
+Projet utilisé comme lab et portfolio IT.
+</p>
+
+<hr>
+
+<p><b>Status :</b> ✅ Complet</p>
+<p><b>Version :</b> 1.0.0</p>
+<p><b>Dernière mise à jour :</b> Mai 2026</p>
