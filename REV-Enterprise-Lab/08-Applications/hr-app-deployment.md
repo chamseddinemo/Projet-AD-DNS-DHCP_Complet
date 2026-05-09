@@ -60,22 +60,6 @@ Add-DnsServerResourceRecord -ZoneName rev.local -Name hrapp -A -IPv4Address 192.
 - **Exécuter** : Normal
 - **Changer d'icône** : Icône d'application
 
-### Script alternatif
-Si le GPO de raccourci ne fonctionne pas, utiliser un script :
-
-```powershell
-# Script de création de raccourci
-$shortcutPath = "$env:USERPROFILE\Desktop\HR Application.lnk"
-$targetPath = "http://hrapp.rev.local"
-
-# Créer l'objet raccourci
-$shell = New-Object -ComObject WScript.Shell
-$shortcut = $shell.CreateShortcut($shortcutPath)
-$shortcut.TargetPath = $targetPath
-$shortcut.Description = "Accès à l'application HR"
-$shortcut.Save()
-```
-
 ### Configuration du script dans GPO
 1. **Naviguer vers** : Configuration utilisateur → Stratégies → Paramètres Windows → Scripts
 2. **Ajouter le script** à l'ouverture de session
@@ -125,37 +109,7 @@ gpupdate /force
    - Confirmer la configuration DNS du client
    - Tester avec `nslookup`
 
-### Commandes utiles
-```powershell
-# Vérifier l'enregistrement DNS
-Get-DnsServerResourceRecord -ZoneName rev.local -Name hrapp
-
-# Supprimer et recréer l'enregistrement
-Remove-DnsServerResourceRecord -ZoneName rev.local -Name hrapp -RRType A -Force
-Add-DnsServerResourceRecord -ZoneName rev.local -Name hrapp -A -IPv4Address 192.108.1.10
-
-# Vérifier les GPO appliquées
-Get-GPResultantSetOfPolicy -User $env:USERNAME
-```
-
 ## 📊 Monitoring
-
-### Surveillance du déploiement
-```powershell
-# Script pour vérifier la présence du raccourci
-$users = Get-ADUser -Filter {Enabled -eq $true} -Properties ProfilePath
-
-foreach ($user in $users) {
-    $desktopPath = "\\file.rev.local\Profiles\$($user.SamAccountName)\Desktop"
-    $shortcutPath = "$desktopPath\HR Application.lnk"
-    
-    if (Test-Path $shortcutPath) {
-        Write-Host "✅ Raccourci trouvé pour $($user.SamAccountName)"
-    } else {
-        Write-Host "❌ Raccourci manquant pour $($user.SamAccountName)"
-    }
-}
-```
 
 ### Rapport de déploiement
 - **Utilisateurs ciblés** : Tous les membres de HK-Group
