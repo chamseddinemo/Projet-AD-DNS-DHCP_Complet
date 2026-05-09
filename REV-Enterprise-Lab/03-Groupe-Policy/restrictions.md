@@ -11,6 +11,15 @@ Ce document présente les restrictions utilisateur implémentées dans le domain
 - Limiter les options de menu contextuel
 - Contrôler l'accès aux outils système
 
+
+   
+### Configuration DHCP
+![DHCP Configuration](../Capture d'écran/DHCP/Capture d’écran (477).png)
+ 
+### Configuration des quotas
+![Quota Configuration](../Capture d'écran/quota/Capture d’écran (477).png)
+
+
 ## 🚫 Restrictions par département
 
 ### HR et Sales (Restrictions strictes)
