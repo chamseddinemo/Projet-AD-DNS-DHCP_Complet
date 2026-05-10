@@ -5,8 +5,9 @@
 REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pour simuler les opérations IT d'une entreprise réelle.
 Ce projet démontre l'implémentation et la gestion des services Windows Server essentiels.
 </p>
-![Quota Configuration](../Capture%20d%27écran/Capture%20d%27écran%20(477).png)<hr>
+<hr>
 
+![Quota Configuration](../Capture%20d%27écran/Capture%20d%27écran%20(477).png)
 <h2>🎯 Objectifs</h2>
 <ul>
 <li>Simuler un environnement Windows Server d'entreprise</li>
