@@ -1,6 +1,6 @@
 <h1>🏢 REV-Enterprise-Lab</h1>
 
-<h2>📌 Description du projet</h2>
+<h2> Description du projet</h2>
 <p>
 REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pour simuler les opérations IT d'une entreprise réelle.
 Ce projet démontre l'implémentation et la gestion des services Windows Server essentiels.
@@ -8,7 +8,7 @@ Ce projet démontre l'implémentation et la gestion des services Windows Server 
 <hr>
 
 ![Quota Configuration](../Capture%20d%27écran/Capture%20d%27écran%20(477).png)
-<h2>🎯 Objectifs</h2>
+<h2> Objectifs</h2>
 <ul>
 <li>Simuler un environnement Windows Server d'entreprise</li>
 <li>Déployer Active Directory avec structure organisationnelle</li>
@@ -20,7 +20,7 @@ Ce projet démontre l'implémentation et la gestion des services Windows Server 
 
 <hr>
 
-<h2>🛠️ Technologies utilisées</h2>
+<h2> Technologies utilisées</h2>
 <table>
 <tr><th>Technologie</th><th>Version</th><th>Usage</th></tr>
 <tr><td>Windows Server</td><td>2019/2022</td><td>Serveur principal</td></tr>
@@ -34,7 +34,7 @@ Ce projet démontre l'implémentation et la gestion des services Windows Server 
 
 <hr>
 
-<h2>🏗️ Détails de l'environnement</h2>
+<h2> Détails de l'environnement</h2>
 
 <h3>Configuration réseau</h3>
 <ul>
@@ -75,9 +75,9 @@ HR | HK | Sales | IT
 
 <hr>
 
-<h2>✨ Fonctionnalités</h2>
+<h2> Fonctionnalités</h2>
 
-<h3>🔐 Gestion des identités</h3>
+<h3> Gestion des identités</h3>
 <ul>
 <li>Active Directory Domain Services</li>
 <li>OU par département</li>
