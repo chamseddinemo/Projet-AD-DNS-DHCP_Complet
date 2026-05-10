@@ -84,7 +84,3 @@ Chaque département a sa propre OU dans Active Directory pour une gestion centra
 ![Services Overview](../screenshots/01-architecture/services-overview.png)
 
 ---
-
-**Document** : Vue d'ensemble de l'architecture  
-**Version** : 1.0  
-**Dernière mise à jour** : Mai 2026
