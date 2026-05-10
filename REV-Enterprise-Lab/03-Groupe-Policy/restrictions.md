@@ -11,13 +11,8 @@ Ce document présente les restrictions utilisateur implémentées dans le domain
 - Limiter les options de menu contextuel
 - Contrôler l'accès aux outils système
 
-
-   
-
- 
 ### Configuration des quotas
-![Quota Configuration](../Capture d'écran/quota/Capturedécran-(477).png)
-
+![Quota Configuration](../Capture%20d%27écran/quota/Capture%20d%27écran%20(477).png)
 
 ## 🚫 Restrictions par département
 
