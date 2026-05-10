@@ -7,7 +7,8 @@ Ce projet démontre l'implémentation et la gestion des services Windows Server 
 </p>
 <hr>
 
-![Quota Configuration](../Capture%20d%27écran/Capture%20d%27écran%20(477).png)
+![Quota Configuration](https://raw.githubusercontent.com/chamseddinemo/Projet-AD-DNS-DHCP_Complet/main/REV-Enterprise-Lab/Capture%20d'écran/quota/Capture%20d'écran%20(477).png)
+
 <h2> Objectifs</h2>
 <ul>
 <li>Simuler un environnement Windows Server d'entreprise</li>
