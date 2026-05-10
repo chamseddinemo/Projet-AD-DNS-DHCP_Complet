@@ -11,8 +11,6 @@ Ce document présente les restrictions utilisateur implémentées dans le domain
 - Limiter les options de menu contextuel
 - Contrôler l'accès aux outils système
 
-### Configuration des quotas
-![Quota Configuration](../Capture%20d%27écran/quota/Capture%20d%27écran%20(477).png)
 
 ![Quota Configuration](https://github.com/chamseddinemo/Projet-AD-DNS-DHCP_Complet/blob/main/Capture%20d%27écran/quota/Capture%20d%27écran%20(477).png?raw=true)
 
