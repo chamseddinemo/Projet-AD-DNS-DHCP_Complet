@@ -11,7 +11,7 @@ Ce document présente les restrictions utilisateur implémentées dans le domain
 - Limiter les options de menu contextuel
 - Contrôler l'accès aux outils système
 
-![Quota Configuration](./Capture%20d%27écran/Capture%20d%27écran%20(477).png)
+![Quota Configuration](../Capture%20d%27écran/Capture%20d%27écran%20(477).png)
 
 ![Quota Configuration](../Capture%20d%27écran/Capture%20d%27écran%20(477).png)
 
