@@ -2,7 +2,7 @@
 
 ## Description du projet
 
-REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pour simuler les opérations IT d'une entreprise réelle. Ce projet démontre l'implémentation et la gestion des services Windows Server essentiels.
+REV-Projet est un environnement de laboratoire Windows Server conçu pour des opérations IT d'une entreprise de Tech. Ce projet démontre l'implémentation et la gestion des services Windows Server.
 
 ---
 
