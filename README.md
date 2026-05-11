@@ -1,4 +1,4 @@
-# 🏢 REV-Enterprise-Lab
+# REV-Enterprise-Lab
 
 ## Description du projet
 
@@ -6,13 +6,7 @@ REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pou
 
 ---
 
-## 📸 Aperçu - Configuration des quotas
-
-![Quota Configuration](REV-Enterprise-Lab/Capture%20d'écran/quota/Capture%20d'écran%20(477).png)
-
----
-
-## 🎯 Objectifs
+## Objectifs
 
 - Simuler un environnement Windows Server d'entreprise
 - Déployer Active Directory avec structure organisationnelle
@@ -23,7 +17,7 @@ REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pou
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 | Technologie | Version | Usage |
 |------------|---------|-------|
@@ -37,7 +31,7 @@ REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pou
 
 ---
 
-## 🏗️ Détails de l'environnement
+## Détails de l'environnement
 
 ### Configuration réseau
 - **Nom de domaine** : `rev.local`
@@ -56,7 +50,7 @@ REV-Enterprise-Lab est un environnement de laboratoire Windows Server conçu pou
 
 ---
 
-## 📋 Architecture
+## Architecture
 
 ```
 REV ENTERPRISE LAB
@@ -78,17 +72,17 @@ HR | HK | Sales | IT
 
 ## ✨ Fonctionnalités principales
 
-### 🔐 Gestion des identités
+### Gestion des identités
 - Active Directory Domain Services
 - OU par département
 - Gestion utilisateurs et groupes
 
-### 📋 GPO (Stratégies de groupe)
+### GPO (Stratégies de groupe)
 - Blocage CMD et Control Panel
 - Restriction stockage externe
 - Stratégies de mot de passe
 
-### 🌐 Réseau
+### Réseau
 - DHCP avec scope + réservation
 - DNS avec load balancing
 
@@ -97,41 +91,35 @@ HR | HK | Sales | IT
 - Permissions NTFS
 - Quotas disque
 
-### 🔒 Sécurité
+### Sécurité
 - Complexité mot de passe
 - Account lockout
 - Restrictions utilisateurs
 
-### 🖥️ Client
+### Client
 - Join domain
 - Admin local via groupe IT
 - GPO appliquées
 
 ---
 
-## 📸 Captures d'écran du projet
+## Captures d'écran du projet
 
 ### Configuration des stratégies de groupe (GPO)
-![GPO Configuration](REV-Enterprise-Lab/Capture%20d'écran/GPO/Capture%20d'écran%20(418).png)
-
+photos:
 ### Gestion des groupes Active Directory
-![Groups Management](REV-Enterprise-Lab/Capture%20d'écran/GROUPES/Capture%20d'écran%20(407).png)
-
+photos:
 ### Politique de mot de passe
-![Password Policy](REV-Enterprise-Lab/Capture%20d'écran/MOT%20DE%20PASSE/Capture%20d'écran%20(417).png)
-
+photos:
 ### Configuration DHCP
-![DHCP Configuration](REV-Enterprise-Lab/Capture%20d'écran/DHCP/)
-
+photos:
 ### Mappage des lecteurs
-![Drive Mapping](REV-Enterprise-Lab/Capture%20d'écran/MapDrive/)
-
+photos:
 ### Gestion des quotas
-![Quota Management](REV-Enterprise-Lab/Capture%20d'écran/quota/)
-
+photos:
 ---
 
-## 🎓 Compétences démontrées
+## Compétences démontrées
 
 | Catégorie | Compétences |
 |----------|------------|
@@ -142,16 +130,6 @@ HR | HK | Sales | IT
 | Sécurité | Politiques, accès, permissions |
 | Client | Join domain, configuration |
 | Documentation | Rédaction technique, procédures |
-
----
-
-## 🚀 Améliorations futures
-
-- Ajouter un deuxième Domain Controller
-- Implémenter AD CS (Active Directory Certificate Services)
-- Configurer VPN et DirectAccess
-- Ajouter monitoring et surveillance
-- Backup serveur automatisé
 
 ---
 
@@ -194,15 +172,3 @@ Projet-AD-DNS-DHCP_Complet/
 │   └── README.md
 └── README.md
 ```
-
----
-
-## 🤝 Contribuer
-
-Ce projet sert de laboratoire complet pour l'administration Windows Server et peut être utilisé comme portfolio IT ou ressource d'apprentissage.
-
----
-
-**Status** : ✅ Complet  
-**Version** : 1.0.0  
-**Dernière mise à jour** : Mai 2026
